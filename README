@@ -1,0 +1,16 @@
+Configuracion de Ruta del WebDriver
+En el archivo serenity.conf se encuentra una configuración por defecto de esta ruta:
+
+webdriver.chrome.driver = src/test/resources/driver/chromedriver.exe
+Ejecución Todos los test y generación reporte
+Para ejecutar todos los test del proyecto se puede usar el comando
+
+gradle clean test aggregate
+Configurar IntelliJ para que navegue de los pasos del .feature a su respectivo StepDefinition
+Ir a las siguietes opciones FILE -> SETTINGS -> PLUGINS
+
+Ubicar el campo de busqueda y en la opción Show seleccionar "All Plugins" 2.1 en la lupa Buscar: "Cucumber for Java" y verificar que este instalado. 2.2 Buscar el plugin "Gherkin" y verificar que este instalado.
+
+Si el plugin de "Cucumber for Java" o "Gherkin" falta, Seleccionar en la parte inferior la opcion "Browse Repositories" e instalar ambos plugins.
+
+Reiniciar IntelliJ y probar desde un .feature navegar al paso en el Definition.
